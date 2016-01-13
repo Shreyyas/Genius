@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Genius</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="semantic-ui/dist/semantic.css" rel="stylesheet" type="text/css">
+    <link href="semantic-ui/dist/components/reset.css" rel="stylesheet" type="text/css">
+    <link href="semantic-ui/dist/components/site.css" rel="stylesheet" type="text/css">
+    <link href="semantic-ui/dist/components/grid.css" rel="stylesheet" type="text/css">
+    <link href="semantic-ui/dist/components/button.css" rel="stylesheet" type="text/css">
+    <link href="css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="css/ion.rangeSlider.skinModern.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <!-- Main Intro Page -->
+    <header>
+        <div class="container" id="header-container">
+            <h1 id="intro-start">GENIUS</h1>
+            <h1 id="intro-learn">Learn Words Faster. Efficiently.</h1>
+            <br>
+            <button class="circular ui positive icon button" id="button_ready" style="margin-left:5px; font-size: 25px;">
+                <i class="icon checkered flag"></i>
+            </button>
+        </div>
+    </header>
+    <!-- Sidebar -->
+    <div class="ui left visible borderless inverted vertical menu sidebar">
+        <!-- Logo -->
+        <div class="item" style="text-align:center; padding-bottom:0px">
+            <a href="" id="genius-logo">Genius</a>
+        </div>
+        <!-- Search Bar -->
+        <div class="item"> Search
+            <div id="search" class="ui icon input">
+                <input type="text" placeholder="Search...">
+                <i class="circular inverted search link icon"></i>
+            </div>
+        </div>
+        <!-- Toggler In Order or Randomize -->
+        <div class="item"> Toggle Order
+            <div class="ui buttons">
+                <br>
+                <br>
+                <button class="ui blue button" id="button_inOrder">In Order</button>
+                <div class="or"></div>
+                <button class="ui green button" id="button_randomize">Randomize</button>
+            </div>
+        </div>
+        <!-- Number of Words Slider -->
+        <div class="item"> Number of Words
+            <input type="text" id="slider" name="numberOfWords" value="10" />
+        </div>
+        <!-- Letter Filter -->
+        <div class="item" style="padding-top: 10px; padding-bottom: 0px;"> Filter by Letter
+
+            <div class="ui list">
+                <div class="item letterGroup">A - E</div>
+                <div class="item letterGroup">F - J</div>
+                <div class="item letterGroup">K - O</div>
+                <div class="item letterGroup">P - T</div>
+                <div class="item letterGroup">U - Z</div>
+            </div>
+            <!-- Old Letter Filter (Revert back if needed) -->
+            <!-- <div class="alphabet menu"></div>-->
+        </div>
+    </div>
+
+    <!-- Main View -->
+    <div class="pusher">
+        <!-- Letter Heading -->
+        <p id="word-deck"></p>
+        <!-- Contains the main metro-style flashcards -->
+        <div class="container-fluid">
+            <div id="metro-container" class="row"></div>
+        </div>
+        <!-- Contains the back and next buttons -->
+        <div class="container-fluid" style="margin-top:2%">
+            <div id="buttons-container">
+                <!-- Back Button -->
+                <div class="ui animated blue button" id="button_back" tabindex="0">
+                    <div class="visible content">Back</div>
+                    <div class="hidden content">
+                        <i class="left arrow icon"></i>
+                    </div>
+                </div>
+                <!-- Next Button -->
+                <div class="ui animated positive button" id="button_next" tabindex="0">
+                    <div class="visible content">Next</div>
+                    <div class="hidden content">
+                        <i class="right arrow icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js "></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Range Slider -->
+    <script src="js/ion.rangeSlider.min.js"></script>
+
+    <!-- Nice Scroll Bar -->
+    <script src="js/jquery.nicescroll.js"></script>
+
+    <!-- Loads Data and Populates Vis -->
+    <script src="js/load_data.js "></script>
+
+    <!-- Handles UI Events -->
+    <script src="js/ui_events.js"></script>
+
+</body>
+
+</html>
