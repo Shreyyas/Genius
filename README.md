@@ -4,13 +4,13 @@ Genius is a tool to help you memorize words easily and efficiently.
 
 ##Starting up Genius
 
-1) Open up a command prompt and __go to src/__ the directory where index.html is located.
+1) __Open up a command prompt__ at the directory where index.html is located.
 
 2) Type the following command: __python -m SimpleHTTPServer 3000__.
 
 3) Open up Google Chrome at __localhost:3000__. 
 
-4) Set the zoom level to 100%. Do this by pressing the __CTRL+0__.
+4) Set the zoom level to 100%. Do this by pressing __CTRL + 0__.
 
 5) Great! _You've started Genius_.
 
